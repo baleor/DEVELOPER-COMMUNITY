@@ -7,9 +7,8 @@ var cors = require('cors')
 connectDB();
 
 app.use(cors());
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json());
+
+app.use(express.json({ extended: false }))
 app.use('/user',require('./routes/user'));
 app.use('/auth',require('./routes/auth'));
 app.use('/profile',require('./routes/profile'));
