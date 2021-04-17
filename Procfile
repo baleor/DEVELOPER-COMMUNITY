@@ -1,1 +1,1 @@
-web: node src/<DEVCONN>.js
+web: node src/<server>.js
