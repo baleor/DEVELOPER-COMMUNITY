@@ -19,6 +19,7 @@ if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'));
 
     app.get('*',(req, res) => {
+        console.log(path);
         res.sendFile(path.resolve(__dirname,'client','build','index.html'));
     })
 }
