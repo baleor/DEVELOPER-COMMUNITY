@@ -1,0 +1,4 @@
+{
+    "url": "mongodb+srv://anshul:anshulrao1@cluster0.srrkk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtsecret":"mysecret"
+}
