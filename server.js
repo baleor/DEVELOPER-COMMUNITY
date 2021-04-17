@@ -14,9 +14,9 @@ app.use('/auth',require('./routes/auth'));
 app.use('/profile',require('./routes/profile'));
 app.use('/post',require('./routes/post'));
 
-console.log('running');
-
 if(process.env.NODE_ENV === 'production'){
+
+    console.log('running');
     app.use(express.static('client/build'));
 
     app.get('*',(req, res) => {
