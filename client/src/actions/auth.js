@@ -19,7 +19,7 @@ export const loadUser = () => async dispatch => {
     }
 
     try {
-        const res = await Axios.get('http://localhost:5000/auth')
+        const res = await Axios.get('/auth')
 
         dispatch({
             type : USER_LOADED,
@@ -42,7 +42,7 @@ export const register = ({ name, email, password}) => async dispatch => {
 
     const body =JSON.stringify({name, email, password});
     try {
-        const res = await Axios.post('http://localhost:5000/user',body,config);
+        const res = await Axios.post('/user',body,config);
 
         dispatch({
             type: REGISTER_SUCCESS,
@@ -71,7 +71,7 @@ export const login = ( email, password) => async dispatch => {
 
     const body =JSON.stringify({email, password});
     try {
-        const res = await Axios.post('http://localhost:5000/auth',body,config);
+        const res = await Axios.post('/auth',body,config);
 
         dispatch({
             type: LOGIN_SUCCESS,
