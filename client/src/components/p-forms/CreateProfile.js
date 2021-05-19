@@ -65,7 +65,7 @@ const CreateProfile = ({ createProfile, history, auth : {token}}) => {
             <option value="Instructor">Instructor or Teacher</option>
             <option value="Intern">Intern</option>
             <option value="Other">Other</option>
-          </select>
+          </select>formData.
           <small className="form-text"
             >Give us an idea of where you are at in your career</small
           >
